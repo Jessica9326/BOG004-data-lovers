@@ -17,9 +17,14 @@ export const personajes = data.results;
  let species= personajes.filter(personaje => personaje.species=="")
  console.log(species)
 
- let gender = personajes.filter(personaje => personaje.gender=="Male")
- console.log(gender)
-
+export const filtrarPersonajesEspecie = (criterio) => {
+   
+  return personajes.filter(p => p.species === criterio)
+}
+export const filtrarPersonajesEstado = (criterio) => {
+   
+  return personajes.filter(p => p.status === criterio)
+}
 
 
 
