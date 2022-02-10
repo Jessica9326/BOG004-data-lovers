@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+  </head >
+  
   <body>
+    
+    <section id="laboratorio" class="oculto" >
+      <input id="name" type="text"/>
+      <select id="species">
+        <option value="species">Especie</option>
+        <option value="alien">Alien</option>
+        <option value="robot">Robot</option>
+      </select>
+    </section>
+
+    <div id="inicio" class="portal" class="oculto">
+      <img  src="img/portal.png" /> 
+      <img  src="img/Rick_and_Morty.png" class="rickandmorty"/>
+      <a href="#" class="btn-neon" id="btnNeon" >
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+               Iniciar
+        </a>
+    </div>
+    
+   
+     
+    
+    
+   
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    
   </body>
 </html>

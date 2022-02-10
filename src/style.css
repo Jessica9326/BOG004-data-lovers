@@ -1,0 +1,113 @@
+body { 
+    background-image: url(img/fondo.jpeg); 
+    background-size: cover; 
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+.menu ul li a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  .menu ul li a:hover {
+      background-color: aqua;
+      color: white
+  }
+
+.portal img{
+    width: 500px;
+    height: auto;
+    position: absolute ;
+}
+.portal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.portal .rickandmorty {
+    margin-top: 180px;
+    width: 600px;
+}
+.btn-neon{
+   position: relative; 
+   display: inline-block;
+   padding: 20px 40px;
+   color: #fff;
+  letter-spacing: 4px;
+  font-size: 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: sans-serif;
+  margin-top: 550px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+.btn-neon:hover{
+    background: #11c3c9;
+    box-shadow: 0 0 10px #11c3c9, 0 0 40px #11c3c9, 0 0 80px#11c3c9; 
+    transition-delay: 1s;
+    
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+    } 
+    #span1{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg,transparent,#11c3c9);
+    }
+    .btn-neon:hover #span1{
+        left: 100%;
+        transition: 1s;
+     }
+     #span3{
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(270deg,transparent,#11c3c9);
+        }
+    .btn-neon:hover #span3{
+        right:100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+       }
+     #span2{
+        top: -100%;
+        right: 0%;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#11c3c9);
+     }
+    .btn-neon:hover #span2{
+        top:100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+       }
+       #span4{
+        bottom: -100%;
+        left: 0%;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#11c3c9);
+           }
+    .btn-neon:hover #span4{
+        bottom:100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+    }
+    .oculto {
+        display: none;
+    }
+    
