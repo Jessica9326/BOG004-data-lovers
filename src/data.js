@@ -22,8 +22,9 @@ export const filtrarPersonajesEspecie = (criterio) => {
   return personajes.filter(p => p.species === criterio)
 }
 export const filtrarPersonajesEstado = (criterio) => {
-   
+  console.log(personajes)
   return personajes.filter(p => p.status === criterio)
+ 
 }
 
 
