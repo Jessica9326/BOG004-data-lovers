@@ -1,6 +1,7 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 //import data from './data/pokemon/pokemon.js';
+
 import {personajes, filtrarPersonajesEspecie, filtrarPersonajesEstado} from "./data.js"
 
 
@@ -17,11 +18,12 @@ const fStatus = document.getElementById("status");
 
    fEspecie.addEventListener("change", (event) => {
     
-     console.log (filtrarPersonajesEspecie(fEspecie.value))
+    pintarTarjetas (filtrarPersonajesEspecie(fEspecie.value))
+
     });
     fStatus.addEventListener("change", (event) => {
     
-        console.log (filtrarPersonajesEstado(fStatus.value))
+    pintarTarjetas (filtrarPersonajesEstado(fStatus.value))
        });
    
 
@@ -42,6 +44,37 @@ ocultarElemento("inicio")
 const inicioPortal =() => {
     mostrarElemento ("laboratorio")
 }
+
+//Funciones para tarjeta de personajes
+
+ const pintarTarjetas = (personajes) => {
+     vaciarPantalla ()
+     for (let i=0; i<personajes.length; i++){
+         const personaje = personajes[i]
+
+        const ficha = document.createElement("div")
+        ficha.className= "personaje";
+
+        const imgPersonaje = document.createElement ("img")
+        imgPersonaje.src = personaje.image
+        imgPersonaje.className="imagen"
+        ficha.appendChild(imgPersonaje);
+
+        const nombrePersonaje = document.createElement("div")
+        nombrePersonaje.className ="nombre"
+        nombrePersonaje.innerHTML = personaje.name
+        ficha.appendChild(nombrePersonaje);
+
+        document.getElementById("root").appendChild(ficha)
+        
+     }
+ }
+
+ export const vaciarPantalla = () => {
+     document.getElementById("root").innerHTML = ""
+ }
+ 
+
 
 //Escuchadores de eventos
 btnIniciar.addEventListener("click", iniciar)

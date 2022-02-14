@@ -15,14 +15,15 @@ export const personajes = data.results;
  let status = personajes.filter(personaje => personaje.status=="Alive")
  
  let species= personajes.filter(personaje => personaje.species=="")
- console.log(species)
+ 
 
 export const filtrarPersonajesEspecie = (criterio) => {
    
   return personajes.filter(p => p.species === criterio)
+  
 }
 export const filtrarPersonajesEstado = (criterio) => {
-  console.log(personajes)
+
   return personajes.filter(p => p.status === criterio)
  
 }
