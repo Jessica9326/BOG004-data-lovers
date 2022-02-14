@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
@@ -20,6 +20,11 @@
         </a>
     </div>
     <section id="laboratorio" class="oculto" >
+      <select name="az" id="az" class="resultadoAz">
+        <option value="organizar">organizar</option>
+        <option value="az">a-z</option>
+        <option value="za">z-a</option>
+      </select>
       <input name="name" id="name" type="text" class="resultadoNombre"/>
       <select name="species" id="species" class="resultadoSpecies">
         <option value="species">Especie</option>
@@ -42,10 +47,6 @@
         <option value="unknown">Desconocido</option>
       </select>
     </section>
-   
-     
-    
-    
    
     <div id="root"></div>
     <script src="main.js" type="module"></script>

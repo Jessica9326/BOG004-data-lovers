@@ -110,4 +110,35 @@ body {
     .oculto {
         display: none;
     }
+    #root {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+
+    .ficha {
+        background-color: #fff;
+        margin: 40px;
+    }
+
+
+    @media only screen and (max-width: 480px) {
+        .ficha {
+            background-color: #f00;
+        }
+        .portal img {
+            width: 300px;
+        }
+        .portal .rickandmorty {
+            margin-top: 80px;
+            width: 400px;
+        }
+        .btn-neon{ 
+            padding: 15px 35px; 
+            transition-delay: 0s;
+        }
+      }
+      
+    
     
