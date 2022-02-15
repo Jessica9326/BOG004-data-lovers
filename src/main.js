@@ -1,14 +1,14 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 //import data from './data/pokemon/pokemon.js';
-import { personajes, filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ} from "./data.js"
+import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ} from "./data.js"
 
 
 
 //Elementos del DOM (documento HTML)
 
 const btnIniciar = document.getElementById("btnNeon");
-const inicio = document.getElementById("inicio");
+//const inicio = document.getElementById("inicio");
 const fEspecie = document.getElementById("species");
 const fStatus = document.getElementById("status");
 const fNombreText = document.getElementById("name");
@@ -30,26 +30,23 @@ const iniciar = () => {
     mostrarElemento("laboratorio")
     ocultarElemento("inicio")
 }
-const inicioPortal = () => {
-    mostrarElemento("laboratorio")
-}
 
 //Metodo para filtrar elementos
 
-fEspecie.addEventListener("change", (event) => {
+fEspecie.addEventListener("change", () => {
 
     pintarTarjetas(filtrarPersonajesEspecie(fEspecie.value))
 
 });
-fStatus.addEventListener("change", (event) => {
+fStatus.addEventListener("change", () => {
 
     pintarTarjetas(filtrarPersonajesEstado(fStatus.value))
 });
-fNombreText.addEventListener("keyup", (event) => {
+fNombreText.addEventListener("keyup", () => {
 
     pintarTarjetas(filtrarPersonajeNombre(fNombreText.value))
 });
-filtroAZ.addEventListener("change", (event) => {
+filtroAZ.addEventListener("change", () => {
 
     pintarTarjetas(ordenarAZ(filtroAZ.value))
 });
@@ -89,7 +86,6 @@ const pintarTarjetas = (personajes) => {
 
     }
 }
-
 export const vaciarPantalla = () => {
     document.getElementById("root").innerHTML = ""
 }
