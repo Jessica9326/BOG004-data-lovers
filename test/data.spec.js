@@ -1,5 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
-import {filtrarPersonajesEspecie, filtrarPersonajesEstado} from '../src/data.js';
+import {filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre} from '../src/data.js';
 
 
 describe('filtrosPorEspecie', () => {
@@ -32,11 +32,11 @@ describe('filtrosPorEspecie', () => {
    });
 });
 
-//describe("personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase()))",() =>{ 
-  ///it('debería ser una función', () => {
-    //expect(typeof personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase())) ).toBe('function');
- // }); 
- //});
+ describe("filtrosPorNombre",() =>{ 
+  it('deberia ser una funcion', () => {
+    expect(typeof filtrarPersonajeNombre).toBe('function');
+ }); 
+});
 
 
            // it('returns `example`', () => {
