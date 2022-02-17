@@ -1,5 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
-import {filtrarPersonajesEspecie, filtrarPersonajesEstado} from '../src/data.js';
+import {filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ} from '../src/data.js';
 
 
 describe('filtrosPorEspecie', () => {
@@ -32,12 +32,18 @@ describe('filtrosPorEspecie', () => {
    });
 });
 
-//describe("personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase()))",() =>{ 
-  ///it('debería ser una función', () => {
-    //expect(typeof personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase())) ).toBe('function');
- // }); 
- //});
 
+describe("personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase()))",() => { 
+  it('debería ser una función', () => {
+    expect(typeof filtrarPersonajeNombre).toBe('function');
+  }); 
+});
+
+describe('ordenarAZ ', () => {
+  it('deberia retornar un array con Abadango Cluster Princess elemento en  posicion [0]', () => {
+    expect(ordenarAZ("az")[0].name).toBe("Abadango Cluster Princess");
+  });
+  });
 
            // it('returns `example`', () => {
           //   expect(example()).toBe('example');

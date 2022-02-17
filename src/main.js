@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 //import data from './data/pokemon/pokemon.js';
-import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ} from "./data.js"
+import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ, episodios} from "./data.js"
 
 
 
@@ -81,6 +81,12 @@ const pintarTarjetas = (personajes) => {
         estadoPersonaje.className ="estado"
         estadoPersonaje.innerHTML = personaje.status
         ficha.appendChild(estadoPersonaje)
+
+        const episodios = document.createElement("div")
+        episodios.className="episode"
+        episodios.innerHTML = personaje.episode.length
+        ficha.appendChild(episodios)
+
 
         document.getElementById("root").appendChild(ficha)
 

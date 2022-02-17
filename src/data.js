@@ -47,9 +47,11 @@ export const ordenarAZ = (criterio) => {
         return -1; 
       } 
     })
-
   }
+}
 
+export const episodios = (personaje) =>{
+ return personaje.episode.length
 }
 
 
