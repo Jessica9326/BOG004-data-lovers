@@ -21,6 +21,7 @@ export const personajes = data.results;
 //  let az= personajes.filter(personaje => personaje.name=="")
  
 export const filtrarPersonajesEspecie = (criterio) => {
+  
    
   return personajes.filter(p => p.species === criterio)
 }
