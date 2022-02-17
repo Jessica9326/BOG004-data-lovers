@@ -1,5 +1,9 @@
 //import { example, anotherExample } from '../src/data.js';
+<<<<<<< HEAD
 import {filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ} from '../src/data.js';
+=======
+import {filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre} from '../src/data.js';
+>>>>>>> e5fdc8b90ec2843c55d30addb6a831897df43735
 
 
 describe('filtrosPorEspecie', () => {
@@ -32,6 +36,14 @@ describe('filtrosPorEspecie', () => {
    });
 });
 
+<<<<<<< HEAD
+=======
+ describe("filtrosPorNombre",() =>{ 
+  it('deberia ser una funcion', () => {
+    expect(typeof filtrarPersonajeNombre).toBe('function');
+ }); 
+});
+>>>>>>> e5fdc8b90ec2843c55d30addb6a831897df43735
 
 describe("personajes.filter(p => p.name.toLowerCase().includes(criterio.toLowerCase()))",() => { 
   it('debería ser una función', () => {
