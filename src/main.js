@@ -73,22 +73,22 @@ const pintarTarjetas = (personajes) => {
         ficha.appendChild(imgPersonaje);
 
         const nombrePersonaje = document.createElement("div")
-        nombrePersonaje.className = "nombre"
+        nombrePersonaje.className = "nombre parrafo"
         nombrePersonaje.innerHTML = personaje.name
         ficha.appendChild(nombrePersonaje);
 
         const estadoPersonaje = document.createElement("div")
-        estadoPersonaje.className ="estado"
+        estadoPersonaje.className ="estado parrafo"
         estadoPersonaje.innerHTML = personaje.status
         ficha.appendChild(estadoPersonaje)
 
         const episodios = document.createElement("div")
-        episodios.className="episode"
+        episodios.className="episode parrafo"
         episodios.innerHTML = personaje.episode.length
         ficha.appendChild(episodios)
 
         const especiePersonaje =document.createElement("div")
-        especiePersonaje.className="species"
+        especiePersonaje.className="species parrafo"
         especiePersonaje.innerHTML= personaje.species
         ficha.appendChild(especiePersonaje)
 
