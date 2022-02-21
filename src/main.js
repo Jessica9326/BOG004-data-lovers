@@ -87,6 +87,12 @@ const pintarTarjetas = (personajes) => {
         episodios.innerHTML = personaje.episode.length
         ficha.appendChild(episodios)
 
+        const especiePersonaje =document.createElement("div")
+        especiePersonaje.className="species"
+        especiePersonaje.innerHTML= personaje.species
+        ficha.appendChild(especiePersonaje)
+
+
 
         document.getElementById("root").appendChild(ficha)
 
