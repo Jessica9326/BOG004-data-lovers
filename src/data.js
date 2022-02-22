@@ -11,13 +11,6 @@ import data from './data/rickandmorty/rickandmorty.js';
 //import {Chart} from '../node_modules/chart.js/dist/chart.min.js';
 
 export const personajes = data.results; 
-
-//  let status = personajes.filter(personaje => personaje.status=="Alive")
-//  let species= personajes.filte(personaje => personaje.species=="")
-
-//  let name= personajes.filter(personaje => personaje.name=="")
-
-//  let az= personajes.filter(personaje => personaje.name=="")
  
 export const filtrarPersonajesEspecie = (criterio) => {
   
