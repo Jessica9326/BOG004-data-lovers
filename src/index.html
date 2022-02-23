@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head >
+</head>
 
-  <!-- Primera pagina  -->
-  <body>
+<!-- Primera pagina  -->
+
+<body>
     <div id="inicio" class="portal">
-      <img alt="portal" src="img/portal.png" />
-      <img  alt="rickymorty" src="img/Rick_and_Morty.png" class="rickandmorty"/>
-      <a href="#" class="btn-neon" id="btnNeon" >
+        <img alt="portal" src="img/portal.png" />
+        <img alt="rickymorty" src="img/Rick_and_Morty.png" class="rickandmorty" />
+        <a href="#" class="btn-neon" id="btnNeon">
                Iniciar
         </a>
     </div>
 
-      <!-- Segunda pagina, class para imagen superior de segunda pagina  -->
-    <section id="laboratorio" class="oculto" >
-      <div class="encabezado">
-        <img alt="imagenRickoso"  src="img/ponte rickoso_ccexpress.png"  class="rickoso"/>
-      </div>
+    <!-- Segunda pagina, class para imagen superior de segunda pagina  -->
+    <section id="laboratorio" class="oculto">
+        <div class="encabezado">
+            <img alt="imagenRickoso" src="img/ponte rickoso_ccexpress.png" class="rickoso" />
+        </div>
 
-      <!-- Class para filtros -->
-      <div class="contenedor">
-     <select name="az" id="az" class="resultadoAz">
+        <!-- Class para filtros -->
+        <div class="contenedor">
+            <select name="az" id="az" class="resultadoAz">
         <option value="organizar">organizar</option>
         <option value="az">a-z</option>
         <option value="za">z-a</option>
      </select>
-      <input name="name" id="name" type="text" class="resultadoNombre"/>
-      <select name="species" id="species" class="resultadoSpecies">
+            <input name="name" id="name" type="text" class="resultadoNombre" />
+            <select name="species" id="species" class="resultadoSpecies">
         <option value="species">Especie</option>
         <option value="Alien">Alien</option>
         <option value="Robot">Robot</option>
@@ -45,20 +47,21 @@
         <option value="Disease">Enfermedad</option>
         <option value="Cronenberg">Cronenberg</option>
       </select>
-      <select name="status" id="status" class="resultadoStatus">
+            <select name="status" id="status" class="resultadoStatus">
         <option value="status">Estado</option>
         <option value="Alive">Vivo</option>
         <option value="Dead">Muerto</option>
         <option value="unknown">Desconocido</option>
       </select>
-      <a href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></a>
-    </div>
+            <a href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></a>
+        </div>
     </section>
-       
+
     <div id="root" class="container"></div>
     <script src="main.js" type="module"></script>
-    
-    
-  
-  </body>
+
+
+
+</body>
+
 </html>
