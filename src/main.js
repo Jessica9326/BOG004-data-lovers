@@ -1,7 +1,5 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ, episodios} from "./data.js"
+
+import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ } from "./data.js"
 
 
 
@@ -52,62 +50,14 @@ filtroAZ.addEventListener("change", () => {
 });
 
 
-//Funciones para tarjeta de personajes
-
-// //Funcion "pintarTarjetas" guarda la data llamada "personajes" en data.js, se utiliza para mostrar los elementos segun las opciones que se filtren
-// const pintarTarjetas = (personajes) => {
-//     //se utiliza una funcion para vaciar la pantalla y borrar los personajes filtrados antes
-//     vaciarPantalla()
-//     //Se recorre la data
-//     for (let i = 0; i < personajes.length; i++) {
-//      // Se guarda en una constante "personaje" el personaje que se este filtrando en el momento
-//         const personaje = personajes[i]
-//      // se crea una constante para crear la ficha de como saldra la información en la pagina 
-//         const ficha = document.createElement("div")
-//         ficha.className = "ficha";
-        
-
-//         //appendChild se utiliza para agregar a la "ficha" un elemento de la data 
-//         const imgPersonaje = document.createElement("img")
-//         imgPersonaje.src = personaje.image
-//         imgPersonaje.className = "imagen"
-//         ficha.appendChild(imgPersonaje);
-
-//         const nombrePersonaje = document.createElement("div")
-//         nombrePersonaje.className = "nombre parrafo"
-//         nombrePersonaje.innerHTML = personaje.name
-//         ficha.appendChild(nombrePersonaje);
-
-//         const estadoPersonaje = document.createElement("div")
-//         estadoPersonaje.className ="estado parrafo"
-//         estadoPersonaje.innerHTML = personaje.status
-//         ficha.appendChild(estadoPersonaje)
-
-//         const episodios = document.createElement("div")
-//         episodios.className="episode parrafo"
-//         episodios.innerHTML = personaje.episode.length
-//         ficha.appendChild(episodios)
-
-//         const especiePersonaje =document.createElement("div")
-//         especiePersonaje.className="species parrafo"
-//         especiePersonaje.innerHTML= personaje.species
-//         ficha.appendChild(especiePersonaje)
-
-
-
-//         document.getElementById("root").appendChild(ficha)
-    
-//     }
-// }
-
 const pintarTarjetas = (personajes) => {
     //se utiliza una funcion para vaciar la pantalla y borrar los personajes filtrados antes
     vaciarPantalla()
     //Se recorre la data
     for (let i = 0; i < personajes.length; i++) {
-     // Se guarda en una constante "personaje" el personaje que se este filtrando en el momento
+        // Se guarda en una constante "personaje" el personaje que se este filtrando en el momento
         const personaje = personajes[i]
-     // se crea una constante para crear la ficha de como saldra la información en la pagina 
+        // se crea una constante para crear la ficha de como saldra la información en la pagina 
         const ficha = document.createElement("div")
         ficha.className = "card";
 
@@ -131,8 +81,8 @@ const pintarTarjetas = (personajes) => {
         estadoPersonaje.innerHTML = "Estado: " + personaje.status
         const episodios = document.createElement("p")
         episodios.innerHTML = "Episodios: " + personaje.episode.length
-        const especiePersonaje =document.createElement("p")
-        especiePersonaje.innerHTML= "Especie: " + personaje.species
+        const especiePersonaje = document.createElement("p")
+        especiePersonaje.innerHTML = "Especie: " + personaje.species
         contenido2.appendChild(nombrePersonaje);
         contenido2.appendChild(estadoPersonaje);
         contenido2.appendChild(episodios);
@@ -140,10 +90,10 @@ const pintarTarjetas = (personajes) => {
         face2.appendChild(contenido2)
         ficha.appendChild(face2)
 
-        
+
 
         document.getElementById("root").appendChild(ficha)
-    
+
     }
 }
 
