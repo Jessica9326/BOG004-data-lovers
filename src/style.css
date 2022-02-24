@@ -2,43 +2,8 @@ body {
     background-image: url(img/fondo.jpeg);
 }
 
-.menu ul {
-    display: flex;
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-}
 
-.menu ul li a {
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.menu ul li a:hover {
-    background-color: aqua;
-    color: white
-}
-
-.portal img {
-    width: 500px;
-    height: auto;
-    position: absolute;
-}
-
-.portal {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 200px;
-}
-
-.portal .rickandmorty {
-    margin-top: 180px;
-    width: 600px;
-}
+/* Estilo boton inicio */
 
 .btn-neon {
     position: relative;
@@ -62,9 +27,39 @@ body {
     transition-delay: 0s;
 }
 
+
+/* Estilo imagenes inicio  */
+
+.portal img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+}
+
+.portal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.portal .rickandmorty {
+    margin-top: 180px;
+    width: 600px;
+}
+
+
+/* funcion ocultar "none" */
+
 .oculto {
     display: none;
 }
+
+
+/* Estilo segunda pagina */
+
+
+/* Estilo encabezado pagina */
 
 .encabezado {
     display: flex;
@@ -78,6 +73,15 @@ body {
     align-items: left;
     margin: 10px
 }
+
+.redes {
+    height: 100px;
+    width: auto;
+    margin-top: 70px;
+}
+
+
+/* Estilo filtros */
 
 .contenedor {
     display: flex;
@@ -93,7 +97,7 @@ body {
 #status {
     font-size: 30px;
     background-color: #18191f;
-    color: #fff;
+    color: rgb(255, 255, 255);
     box-shadow: 10px 2px 10px #00000080, 10px 2px 10px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #7c5a5a80, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
     border-radius: 20px;
     padding: 10px 15px;
@@ -128,7 +132,7 @@ body {
 }
 
 
-/* Fichas */
+/* Estilo Fichas */
 
 .container {
     width: 100%;
@@ -150,6 +154,9 @@ body {
     transition: 0.5s;
 }
 
+
+/* Estilo primera cara ficha */
+
 .container .card .face.face1 {
     position: relative;
     background: #333;
@@ -161,7 +168,6 @@ body {
 }
 
 .container .card:hover .face.face1 {
-    background: #ff0057;
     transform: translateY(0);
 }
 
@@ -178,9 +184,15 @@ body {
     max-width: 300px;
 }
 
+
+/* Estilo segunda cara ficha */
+
 .container .card .face.face2 {
     position: relative;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.747);
+    font-style: italic;
+    font-family: helvetica;
+    color: #111110;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +200,7 @@ body {
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
+    border-radius: 20px;
 }
 
 .container .card:hover .face.face2 {
@@ -199,10 +212,10 @@ body {
     padding: 0;
 }
 
+
+/* Reponse */
+
 @media only screen and (max-width: 480px) {
-    .ficha {
-        background-color: #f00;
-    }
     .portal img {
         width: 300px;
     }
@@ -230,6 +243,11 @@ body {
         height: 150px;
         margin: 5px
     }
+    .redes {
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
+    }
     .container .card .face {
         width: 150px;
         height: 100px;
@@ -239,8 +257,9 @@ body {
         max-width: 150px;
     }
     .container .card .face.face2 {
-        padding: 10px;
+        padding: 5px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
         transform: translateY(0px);
+        font-size: 11px;
     }
 }
