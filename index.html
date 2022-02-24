@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Primera pagina  -->
+
+<body>
+    <div id="inicio" class="portal">
+        <img alt="portal" src="img/portal.png" />
+        <img alt="rickymorty" src="img/Rick_and_Morty.png" class="rickandmorty" />
+        <a href="#" class="btn-neon" id="btnNeon">
+               Iniciar
+        </a>
+    </div>
+
+    <!-- Segunda pagina -->
+
+    <section id="laboratorio" class="oculto">
+        <div class="encabezado">
+            <img alt="imagenRickoso" src="img/ponte rickoso_ccexpress.png" class="rickoso" />
+            <img alt="iconos" src="img/iconos-facebook-icono-de-facebook-twitter-png-y-psd-iconos-redes-sociales-11562849003hppzhmn8ep_preview_rev_1 (2).png" class="redes">
+        </div>
+
+        <!-- Segunda pagina filtros -->
+
+        <div class="contenedor">
+            <select name="az" id="az" class="resultadoAz">
+        <option value="organizar">organizar</option>
+        <option value="az">a-z</option>
+        <option value="za">z-a</option>
+     </select>
+            <input name="name" id="name" type="text" class="resultadoNombre" />
+            <select name="species" id="species" class="resultadoSpecies">
+        <option value="species">Especie</option>
+        <option value="Alien">Alien</option>
+        <option value="Robot">Robot</option>
+        <option value="Human">Human</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="Mytholog">Mitologico</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Animal">Animal</option>
+        <option value="Vampire">Vampiro</option>
+        <option value="Parasite">Parasito</option>
+        <option value="Disease">Enfermedad</option>
+        <option value="Cronenberg">Cronenberg</option>
+      </select>
+            <select name="status" id="status" class="resultadoStatus">
+        <option value="status">Estado</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+            <a href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></a>
+        </div>
+    </section>
+
+    <div id="root" class="container"></div>
+    <script src="main.js" type="module"></script>
+
+
+
+</body>
+
+</html>
