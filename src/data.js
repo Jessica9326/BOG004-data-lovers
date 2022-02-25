@@ -39,3 +39,16 @@ export const ordenarAZ = (criterio) => {
 export const episodios = (personaje) => {
     return personaje.episode.length
 }
+
+
+export const ricksMuertos = () => {
+
+    const rickSuma = personajes.reduce(
+        (acumulador, personaje) => {
+            if (personaje.name.toLowerCase().includes("rick") && personaje.status.includes("Dead"))
+                return acumulador + 1
+            else return acumulador
+        }, 0)
+    console.log(rickSuma)
+    return rickSuma
+}

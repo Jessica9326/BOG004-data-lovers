@@ -1,4 +1,4 @@
-import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ } from "./data.js"
+import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ, ricksMuertos } from "./data.js"
 
 
 
@@ -9,6 +9,13 @@ const fEspecie = document.getElementById("species");
 const fStatus = document.getElementById("status");
 const fNombreText = document.getElementById("name");
 const filtroAZ = document.getElementById("az");
+
+const mostrarRickMuertos = () => {
+    const rMuertos = document.getElementById("mensajeEncabezado")
+    rMuertos.innerHTML = "Ricks muertos hasta el momento  " + ricksMuertos()
+}
+mostrarRickMuertos()
+
 
 //metodos para ocultar y mostrar pantallas
 
@@ -50,6 +57,7 @@ filtroAZ.addEventListener("change", () => {
 
     pintarTarjetas(ordenarAZ(filtroAZ.value))
 });
+
 
 
 //Tarjetas

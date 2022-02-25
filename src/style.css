@@ -74,6 +74,14 @@ body {
     margin: 10px
 }
 
+#mensajeEncabezado {
+    color: rgb(10, 221, 116);
+    font-size: 40px;
+    margin-top: 150px;
+    font-family: fantasy;
+    font-style: italic;
+}
+
 .redes {
     height: 100px;
     width: auto;
@@ -242,6 +250,10 @@ body {
         width: 200px;
         height: 150px;
         margin: 5px
+    }
+    #mensajeEncabezado {
+        font-size: 20px;
+        margin-top: 60px;
     }
     .redes {
         height: 50px;
