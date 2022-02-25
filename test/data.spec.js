@@ -54,7 +54,7 @@ describe('ordenarAZ ', () => {
 describe('ordenarAZ', () => {
 
     it('deberia retornar un array con Zick Zack elemento en  posicion [0]', () => {
-        expect(ordenarAZ(personajeZA)[0].name).toBe("Zick Zack");
+        expect(ordenarAZ("za")[0].name).toBe("Zick Zack");
     });
 });
 
