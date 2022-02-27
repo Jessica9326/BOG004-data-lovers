@@ -49,6 +49,5 @@ export const ricksMuertos = () => {
                 return acumulador + 1
             else return acumulador
         }, 0)
-    console.log(rickSuma)
     return rickSuma
 }

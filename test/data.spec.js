@@ -1,5 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
-import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ, episodios } from '../src/data.js';
+import { filtrarPersonajesEspecie, filtrarPersonajesEstado, filtrarPersonajeNombre, ordenarAZ, episodios, ricksMuertos } from '../src/data.js';
 
 
 describe('filtrosPorEspecie', () => {
@@ -70,4 +70,12 @@ describe('personaje', () => {
         }
         expect(episodios(personaje)).toBe(2)
     });
+});
+
+describe('ricksMuertos', () => {
+
+    it('deberia Retornar un numero', () => {
+        expect(ricksMuertos()).toBe(33);
+    });
+
 });
