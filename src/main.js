@@ -10,8 +10,10 @@ const fStatus = document.getElementById("status");
 const fNombreText = document.getElementById("name");
 const filtroAZ = document.getElementById("az");
 
+//Conteo de Ricksmuertos
 const mostrarRickMuertos = () => {
     const rMuertos = document.getElementById("mensajeEncabezado")
+        //Mensaje enviado al HTML para mostrar en la pagina web
     rMuertos.innerHTML = "Ricks muertos hasta el momento  " + ricksMuertos()
 }
 mostrarRickMuertos()

@@ -40,7 +40,7 @@ export const episodios = (personaje) => {
     return personaje.episode.length
 }
 
-
+//Conteo de Ricks Muertos, con el metodo reduce 
 export const ricksMuertos = () => {
 
     const rickSuma = personajes.reduce(
