@@ -35,3 +35,7 @@
 De las historias de usuario, realizamos pequeñas tareas, uniendo la historia de usuario 1 a la 3 en una sola tarea, lo cual fue realizar las diferentes opciones de filtro.
 
 Con la cuarta Historia de Usuario, realizamos el conteo de Ricks que se encuentran en la data y filtramos por los que se encuentran muertos, retornando el dato en la pagina web.
+PRUEBAS UNITARIAS
+se reliazaron pruebas con varios usuarios los cuales señalaron los siguientes inconvenientes:
+Poca claridad en cuanto a los nombres de los filtros.
+las tarjetas estaban pequeñas  y la información no se lee de forma clara.
