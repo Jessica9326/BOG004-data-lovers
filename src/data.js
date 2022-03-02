@@ -10,9 +10,16 @@ export const filtrarPersonajesEspecie = (criterio) => {
 
     return personajes.filter(p => p.species === criterio)
 }
-export const filtrarPersonajesEstado = (criterio) => {
+export const filtrarPersonajesEstado = (criterio,criteriospecie) => {
 
-    return personajes.filter(p => p.status === criterio)
+    return personajes.filter(p =>{
+        if( p.status === criterio && p.species=== criteriospecie){
+            return true
+        } else{
+            return false
+        }
+        })
+
 }
 export const filtrarPersonajeNombre = (criterio) => {
 

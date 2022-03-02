@@ -49,7 +49,7 @@ fEspecie.addEventListener("change", () => {
 });
 fStatus.addEventListener("change", () => {
 
-    pintarTarjetas(filtrarPersonajesEstado(fStatus.value))
+    pintarTarjetas(filtrarPersonajesEstado(fStatus.value,fEspecie.value))
 });
 fNombreText.addEventListener("keyup", () => {
 
